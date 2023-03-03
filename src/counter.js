@@ -59,13 +59,13 @@ class Counter extends React.Component {
                 <input id="add_counter" onChange={this.addChange} type="number" value={this.state.add_count}/>
                 <br />
                 <br />
-                <button onClick={this.add}>Add</button>
+                <button class="add" onClick={this.add}>Add</button>
             </div>
             <div class="half">
                 <input id="sub_counter" onChange={this.subChange} type="number" value={this.state.sub_count}/>
                 <br />
                 <br />
-                <button onClick={this.subtract}>Subtract</button>
+                <button class="sub" onClick={this.subtract}>Subtract</button>
             </div>
         </div>
         );

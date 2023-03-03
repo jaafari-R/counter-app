@@ -15,7 +15,23 @@ div.half{
 }
 
 input {
+    width: 40%;
     text-align: center;
+}
+
+button {
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+button.add {
+    background-color: lightgreen;
+}
+
+button.sub {
+    background-color: #ff5555;
 }
 
 .container {
@@ -24,5 +40,5 @@ input {
     left: 0;
     bottom:0;
     right:0;
-    background-color: #333;
+    background-color: #393939;
 }
