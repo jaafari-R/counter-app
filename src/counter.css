@@ -1,0 +1,29 @@
+h1.title {
+    text-align: center;
+    color: wheat;
+}
+
+h1.counter {
+    text-align: center;
+    color: orange
+}
+
+div.half{
+    display: inline-block;
+    width: 50%;
+    color: aqua;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    background-color: #333;
+}
