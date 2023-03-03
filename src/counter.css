@@ -11,7 +11,6 @@ h1.counter {
 div.half{
     display: inline-block;
     width: 50%;
-    color: aqua;
     text-align: center;
 }
 
