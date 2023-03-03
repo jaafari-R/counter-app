@@ -18,8 +18,7 @@ class Counter extends React.Component {
         this.subChange = this.subChange.bind(this);
     }
 
-    addChange() {
-        const e = document.getElementById("add_counter")
+    addChange(e) {
         if(!this.#isInputValid(e))
         {
             e.value = this.state.add_count;
@@ -30,8 +29,7 @@ class Counter extends React.Component {
         this.setState({add_count: add_cnt})
     }
 
-    subChange() {
-        const e = document.getElementById("sub_counter")
+    subChange(e) {
         if(!this.#isInputValid(e))
         {
             e.value = this.state.sub_count;
@@ -56,13 +54,13 @@ class Counter extends React.Component {
             <h1 class="title">Cool Counter</h1>
             <h1 class="counter">{this.state.count}</h1>
             <div class="half">
-                <input id="add_counter" onChange={this.addChange} type="number" value={this.state.add_count}/>
+                <input id="add_counter" onChange={(e) => this.addChange(e.target)} type="number" value={this.state.add_count}/>
                 <br />
                 <br />
                 <button class="add" onClick={this.add}>Add</button>
             </div>
             <div class="half">
-                <input id="sub_counter" onChange={this.subChange} type="number" value={this.state.sub_count}/>
+                <input id="sub_counter" onChange={(e) => this.subChange(e.target)} type="number" value={this.state.sub_count}/>
                 <br />
                 <br />
                 <button class="sub" onClick={this.subtract}>Subtract</button>
